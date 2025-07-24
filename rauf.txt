@@ -1,0 +1,13 @@
+def greet_user(name):
+    if not name:
+        return "Hello, Stranger!"
+    return f"Hello, {name}!"
+
+def main():
+    users = ["Alice", "Bob", "", "Charlie"]
+    for user in users:
+        greeting = greet_user(user)
+        print(greeting)
+
+if __name__ == "__main__":
+    main()
